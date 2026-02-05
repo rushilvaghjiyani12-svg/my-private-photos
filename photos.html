@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Photos</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+    <h2>📸 Upload Photo</h2>
+
+    <input type="file" accept="image/*" onchange="show(this)">
+    <br><br>
+    <img id="img" width="300">
+
+    <script>
+        function show(input) {
+            document.getElementById("img").src =
+            URL.createObjectURL(input.files[0]);
+        }
+    </script>
+
+</body>
+</html>
