@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private Access</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+    <h2>🔒 Enter Password</h2>
+
+    <input type="password" id="pass" placeholder="Password">
+    <br><br>
+    <button onclick="check()">Enter</button>
+
+    <script>
+        function check() {
+            var p = document.getElementById("pass").value;
+            if (p === "1234") {
+                window.location.href = "photos.html";
+            } else {
+                alert("Wrong password");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
